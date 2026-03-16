@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Staz0r</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#top">Staz0r Portfolio</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <span class="availability-pill"><i class="fa-solid fa-circle"></i>Open to Internship</span>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio 2026</p>
+          <h1>
+            Systems-oriented CS student
+            <span>building reliable software from UI to low-level debugging.</span>
+          </h1>
+          <p class="hero-subtitle">
+            I focus on architecture, performance, and technical problem-solving.
+            My work spans full-stack web apps, hardware protocol
+            reverse-engineering, and custom JavaFX game logic.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="https://drive.proton.me/urls/7S0C20YA7G#chaWKTBbNX9R" target="_blank" rel="noreferrer">Download Resume</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+          <p class="hero-availability"><i class="fa-solid fa-circle"></i>Open to internship opportunities (Apr 2026).</p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <p class="card-title">Featured Project</p>
+            <h2>HydroTracker</h2>
+            <p>
+              A responsive CRUD hydration tracker with goals, streaks, and a
+              leaderboard built using PHP, SQL, and Tailwind.
+            </p>
+            <div class="card-actions">
+              <a class="btn small" href="#projects">View</a>
+              <a class="btn small ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>
+            Computer Science student focused on building maintainable systems
+            and solving technical problems under constraints. I enjoy
+            understanding how software works under the hood and translating
+            that into practical, user-facing solutions.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card card">
+            <div class="card-header">
+              <h3 class="card-title">Focus Areas</h3>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Clean architecture and maintainable systems</li>
+                <li>Performance and low-level debugging</li>
+                <li>Solving complex technical problems</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-card card">
+            <div class="card-header">
+              <h3 class="card-title">Experience Snapshot</h3>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Freelance graphic designer (2021 - 2024)</li>
+                <li>Optimized WebP/SVG assets for web performance</li>
+                <li>Teamwork through ACG Club and football events</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Selected work that shows my approach to UI and full-stack logic.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card card">
+            <div class="card-header">
+              <div class="project-meta">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Tailwind</span>
+              </div>
+              <div class="card-title-row">
+                <h3 class="card-title">HydroTracker</h3>
+                <button class="icon-btn open-preview-btn" type="button" data-start-index="0" aria-label="Open project preview">
+                  <i class="fa-regular fa-images"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                Built a responsive PHP + MySQL hydration tracker with auth,
+                personalized goals, streaks, and a leaderboard.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a class="btn small repo-link" href="https://github.com/Staz0r/hydrotracker" target="_blank" rel="noreferrer">
+                View Repo
+              </a>
+              <a class="btn small ghost" href="#contact">Request Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div class="card-header">
+              <div class="project-meta">
+                <span>Node.js</span>
+                <span>WebHID</span>
+                <span>Systems</span>
+              </div>
+              <h3 class="card-title">Node-HID Hardware Protocol Bridge</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Reverse-engineered proprietary WebHID behavior and implemented
+                lightweight Node.js control logic for direct device communication.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a class="btn small repo-link" href="https://github.com/Staz0r/teevo-driver">View Repo</a>
+            </div>
+          </article>
+
+          <article class="project-card card">
+            <div class="card-header">
+              <div class="project-meta">
+                <span>Java</span>
+                <span>JavaFX</span>
+                <span>Game Dev</span>
+              </div>
+              <h3 class="card-title">JavaFX 2D Game Engine</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Developed a JavaFX 2D engine prototype with modular structure
+                and custom collision logic for controllable gameplay behavior.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a class="btn small repo-link" href="https://github.com/Staz0r/JavaFX-2D-Game-Engine" target="_blank" rel="noreferrer">View Repo</a>
+              <button class="btn small open-preview-btn demo-btn" type="button" data-start-index="5">Watch Demo</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>A mix of backend, frontend, and UI work.</p>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card card">
+            <div class="card-header">
+              <h3 class="card-title">Languages</h3>
+            </div>
+            <div class="card-body">
+              <div class="tag-cloud">
+                <span class="tag"><i class="fa-brands fa-python"></i>Python</span>
+                <span class="tag"><i class="fa-brands fa-java"></i>Java</span>
+                <span class="tag"><i class="fa-solid fa-c"></i>C</span>
+                <span class="tag"><i class="fa-solid fa-code"></i>C++</span>
+                <span class="tag"><i class="fa-solid fa-code"></i>Dart</span>
+                <span class="tag"><i class="fa-brands fa-js"></i>JavaScript</span>
+                <span class="tag"><i class="fa-brands fa-php"></i>PHP</span>
+                <span class="tag"><i class="fa-brands fa-html5"></i>HTML/CSS</span>
+                <span class="tag"><i class="fa-solid fa-terminal"></i>Bash</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card card">
+            <div class="card-header">
+              <h3 class="card-title">Frameworks & Tech</h3>
+            </div>
+            <div class="card-body">
+              <div class="tag-cloud alt">
+                <span class="tag"><i class="fa-brands fa-node-js"></i>Node.js</span>
+                <span class="tag"><i class="fa-solid fa-leaf"></i>Django</span>
+                <span class="tag"><i class="fa-solid fa-mobile"></i>Flutter</span>
+                <span class="tag"><i class="fa-brands fa-bootstrap"></i>Bootstrap</span>
+                <span class="tag"><i class="fa-solid fa-wind"></i>Tailwind</span>
+                <span class="tag"><i class="fa-brands fa-git-alt"></i>Git</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card card">
+            <div class="card-header">
+              <h3 class="card-title">Databases & Systems</h3>
+            </div>
+            <div class="card-body">
+              <div class="tag-cloud">
+                <span class="tag"><i class="fa-solid fa-database"></i>MySQL</span>
+                <span class="tag"><i class="fa-solid fa-layer-group"></i>RDBMS</span>
+                <span class="tag"><i class="fa-solid fa-microchip"></i>Hardware Debugging</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card card">
+            <div class="card-header">
+              <h3 class="card-title">Creative & 3D</h3>
+            </div>
+            <div class="card-body">
+              <div class="tag-cloud alt">
+                <span class="tag"><i class="fa-solid fa-pen-nib"></i>Adobe Suite</span>
+                <span class="tag"><i class="fa-brands fa-figma"></i>Figma</span>
+                <span class="tag"><i class="fa-solid fa-cube"></i>Blender 3D</span>
+                <span class="tag"><i class="fa-solid fa-compass-drafting"></i>Revit</span>
+                <span class="tag"><i class="fa-solid fa-object-group"></i>UI/UX</span>
+                <span class="tag"><i class="fa-solid fa-clapperboard"></i>Video Editing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Languages</h2>
+        </div>
+        <div class="stats-box">
+          <div class="stats-list">
+            <div class="stat-row">
+              <div class="stat-header">
+                <span>Bahasa Indonesia</span>
+                <span class="stat-level">C1</span>
+              </div>
+              <div class="stat-bar"><span style="width: 100%"></span></div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-header">
+                <span>English</span>
+                <span class="stat-level">C1</span>
+              </div>
+              <div class="stat-bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-header">
+                <span>Bahasa Melayu</span>
+                <span class="stat-level">C1</span>
+              </div>
+              <div class="stat-bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-header">
+                <span>Chinese</span>
+                <span class="stat-level">B1</span>
+              </div>
+              <div class="stat-bar"><span style="width: 60%"></span></div>
+            </div>
+            <div class="stat-row">
+              <div class="stat-header">
+                <span>Japanese</span>
+                <span class="stat-level">A2</span>
+              </div>
+              <div class="stat-bar"><span style="width: 35%"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Let us build something together. Reach me here:</p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:darrenfj@proton.me"><i class="fa-regular fa-envelope"></i>darrenfj@proton.me</a>
+          <a href="https://github.com/Staz0r" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+          <a href="https://drive.proton.me/urls/7S0C20YA7G#chaWKTBbNX9R" target="_blank" rel="noreferrer"><i class="fa-regular fa-file-lines"></i>Resume</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>©Staz0r 2026. Deployed on GitHub Pages.</p>
+    </footer>
+
+    <div class="preview-modal" id="preview-modal" aria-hidden="true">
+      <div class="preview-backdrop" id="preview-backdrop"></div>
+      <div class="preview-content" role="dialog" aria-modal="true" aria-label="HydroTracker preview">
+        <button class="preview-close" id="close-preview" type="button" aria-label="Close preview">&times;</button>
+        <button class="preview-nav prev" id="preview-prev" type="button" aria-label="Previous image">&#10094;</button>
+        <img id="preview-image" src="../assets/screenshots/hero.png" alt="HydroTracker full preview" />
+        <video id="preview-video" controls preload="metadata" class="is-hidden"></video>
+        <button class="preview-nav next" id="preview-next" type="button" aria-label="Next image">&#10095;</button>
+        <div class="preview-caption" id="preview-caption">HydroTracker Hero</div>
+      </div>
+    </div>
+
+    <script>
+      const openButtons = document.querySelectorAll(".open-preview-btn");
+      const closeBtn = document.getElementById("close-preview");
+      const prevBtn = document.getElementById("preview-prev");
+      const nextBtn = document.getElementById("preview-next");
+      const previewImage = document.getElementById("preview-image");
+      const previewVideo = document.getElementById("preview-video");
+      const previewCaption = document.getElementById("preview-caption");
+      const backdrop = document.getElementById("preview-backdrop");
+      const modal = document.getElementById("preview-modal");
+      const gallery = [
+        { type: "image", src: "https://raw.githubusercontent.com/Staz0r/HydroTracker/refs/heads/main/assets/screenshots/hero.png", label: "HydroTracker Hero" },
+        { type: "image", src: "https://raw.githubusercontent.com/Staz0r/HydroTracker/refs/heads/main/assets/screenshots/home.png", label: "Home Screen" },
+        { type: "image", src: "https://raw.githubusercontent.com/Staz0r/HydroTracker/refs/heads/main/assets/screenshots/personalization.png", label: "Personalization" },
+        { type: "image", src: "https://raw.githubusercontent.com/Staz0r/HydroTracker/refs/heads/main/assets/screenshots/leaderboard.png", label: "Leaderboard" },
+        { type: "image", src: "https://raw.githubusercontent.com/Staz0r/HydroTracker/refs/heads/main/assets/screenshots/login.png", label: "Login" },
+        { type: "video", src: "https://github.com/Staz0r/JavaFX-2D-Game-Engine/raw/refs/heads/main/Demo.mp4", label: "JavaFX 2D Game Demo" }
+      ];
+      let currentIndex = 0;
+
+      function stopVideo() {
+        previewVideo.pause();
+        previewVideo.removeAttribute("src");
+        previewVideo.load();
+      }
+
+      function renderMedia() {
+        const item = gallery[currentIndex];
+        if (item.type === "video") {
+          previewImage.classList.add("is-hidden");
+          previewVideo.classList.remove("is-hidden");
+          previewVideo.src = item.src;
+          previewVideo.load();
+        } else {
+          stopVideo();
+          previewVideo.classList.add("is-hidden");
+          previewImage.classList.remove("is-hidden");
+          previewImage.src = item.src;
+          previewImage.alt = item.label;
+        }
+        previewCaption.textContent = item.label + " (" + (currentIndex + 1) + "/" + gallery.length + ")";
+      }
+
+      function openPreview(startIndex) {
+        currentIndex = startIndex;
+        renderMedia();
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closePreview() {
+        stopVideo();
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % gallery.length;
+        renderMedia();
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + gallery.length) % gallery.length;
+        renderMedia();
+      }
+
+      openButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const startIndex = Number(button.dataset.startIndex || 0);
+          openPreview(startIndex);
+        });
+      });
+      closeBtn.addEventListener("click", closePreview);
+      backdrop.addEventListener("click", closePreview);
+      nextBtn.addEventListener("click", nextImage);
+      prevBtn.addEventListener("click", prevImage);
+
+      document.addEventListener("keydown", (event) => {
+        if (!modal.classList.contains("is-open")) {
+          return;
+        }
+        if (event.key === "Escape") {
+          closePreview();
+        }
+        if (event.key === "ArrowRight") {
+          nextImage();
+        }
+        if (event.key === "ArrowLeft") {
+          prevImage();
+        }
+      });
+
+      const siteHeader = document.querySelector(".site-header");
+
+      function updateHeaderState() {
+        if (window.scrollY > 24) {
+          siteHeader.classList.add("scrolled");
+        } else {
+          siteHeader.classList.remove("scrolled");
+        }
+      }
+
+      window.addEventListener("scroll", updateHeaderState, { passive: true });
+      updateHeaderState();
+    </script>
+  </body>
+</html>

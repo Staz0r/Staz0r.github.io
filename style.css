@@ -115,11 +115,24 @@ main,
   gap: 20px;
 }
 
+.menu-toggle {
+  display: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(8, 12, 28, 0.55);
+  color: rgba(244, 246, 255, 0.9);
+  cursor: pointer;
+}
+
 .logo {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.02em;
   font-family: "Syne", "Space Grotesk", sans-serif;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -129,6 +142,30 @@ main,
   text-transform: uppercase;
   letter-spacing: 0.2em;
   align-items: center;
+  margin-left: auto;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 980px) {
+  .site-header {
+    width: min(92vw, 1240px);
+  }
+
+  .nav {
+    padding: 16px 18px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+  }
+
+  .availability-pill {
+    padding: 5px 8px;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+  }
 }
 
 .availability-pill {
@@ -549,22 +586,65 @@ section[id] {
 }
 
 @media (max-width: 720px) {
+  body {
+    padding-top: 74px;
+  }
+
   .site-header {
-    width: calc(100vw - 24px);
-    top: 6px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
   }
 
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 12px 18px;
+    column-gap: 10px;
+    gap: 0;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    justify-self: end;
   }
 
   .nav-links {
-    flex-wrap: wrap;
-    gap: 12px;
+    grid-column: 1 / -1;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    letter-spacing: 0.12em;
+    transition: max-height 0.25s ease, opacity 0.2s ease;
+    margin-top: 0;
+  }
+
+  .site-header.menu-open .nav-links {
+    max-height: 260px;
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: 10px;
+  }
+
+  .availability-pill {
+    margin-top: 4px;
+    width: 100%;
+    justify-content: flex-start;
+    white-space: normal;
+    letter-spacing: 0.08em;
   }
 
   .hero {
